@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodNest - Code, Transform and Succeed</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="banner-content">
+            <span>Are you a 2025 passout? Kickstart your career with our Full Stack Development Internship and Unlimited Placement!</span>
+            <button class="register-btn">Register Now</button>
+            <button class="close-banner" onclick="closeBanner()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-k">K</span><span class="logo-text">odNest</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Full Stack Development</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Premium Testing Module</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-crown"></i>
+                    <span>Hire from us</span>
+                </a>
+                <a href="#" class="nav-link">Blog</a>
+            </div>
+
+            <button class="student-login-btn">Student Login</button>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    From <span class="highlight">Learning to Earning:</span><br>
+                    Join the Best Software Training & Placement Institute in Bangalore
+                </h1>
+                <p class="hero-description">
+                    Unlock unlimited placement drives & 1:1 mentorship with top software training and placement institute in Bangalore. Get hands-on training in Full Stack Development or Software Testing and secure your dream tech job.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">83%</div>
+                        <div class="stat-label">Placement Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1310+</div>
+                        <div class="stat-label">Hiring Partners</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30k+</div>
+                        <div class="stat-label">Got Their First Job</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="registration-form">
+                <h3>Book Your Demo Classes, For Free!</h3>
+                <form id="registrationForm">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone" required>
+                    <input type="tel" placeholder="Whatsapp Number" required>
+                    
+                    <div class="form-row">
+                        <select required>
+                            <option value="">Graduation year?</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                        </select>
+                        <select required>
+                            <option value="">Select language</option>
+                            <option value="english">English</option>
+                            <option value="hindi">Hindi</option>
+                            <option value="kannada">Kannada</option>
+                        </select>
+                    </div>
+                    
+                    <input type="text" placeholder="Referred by Friend? Enter KodNest ID and name">
+                    
+                    <div class="radio-group">
+                        <label>Preferred Mode of Learning</label>
+                        <div class="radio-options">
+                            <label class="radio-option">
+                                <input type="radio" name="learning-mode" value="online" checked>
+                                <span>Online</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="learning-mode" value="offline">
+                                <span>Offline</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="radio-group">
+                        <div class="radio-options">
+                            <label class="radio-option">
+                                <input type="radio" name="course-type" value="development" checked>
+                                <span>Development</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="course-type" value="testing">
+                                <span>Testing</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="register-now-btn">REGISTER NOW</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Build Real Apps, Land Dream Job</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Unlimited Placement Drives</h3>
+                    <p>Achieve Big with 34.4 LPA Packages in Top Product-Based Companies</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Create Real-World Projects</h3>
+                    <p>Learn by Doing, Not Just Watching. Hands-On Training with Live Projects & 24/7 Mentor</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Affordable Learning</h3>
+                    <p>Lowest Fees Guaranteed + 7-Day Money-Back Guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+        <div class="container">
+            <button class="get-started-btn">Get Started</button>
+            <h2 class="section-title">Two Career Paths, One Goal: Your Success</h2>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Development Path: Java and Python Full Stack Course</h3>
+                    <p>Effective programmers excel by managing complex details that others might miss</p>
+                    <div class="course-actions">
+                        <button class="explore-btn">
+                            <i class="fas fa-check-circle"></i>
+                            Explore the Course
+                        </button>
+                        <button class="download-btn">Download Brochure</button>
+                    </div>
+                </div>
+                
+                <div class="course-card">
+                    <div class="course-icon testing-icon">
+                        <div class="sun-icon"></div>
+                    </div>
+                    <h3>Testing Path: Comprehensive Testing Premium Course</h3>
+                    <p>Never Let the Same Bug Bite You Twice - Test Smarter, Not Harder</p>
+                    <div class="course-actions">
+                        <button class="explore-btn">
+                            <i class="fas fa-check-circle"></i>
+                            Explore the Course
+                        </button>
+                        <button class="download-btn">Download Brochure</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="container">
+            <p class="testimonial-subtitle">Building Milestones of Success Since 2019</p>
+            <h2 class="section-title">Listen: Real Students' Journeys</h2>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <span class="testimonial-brand">KodNest</span>
+                    <span class="placed-badge">Placed</span>
+                </div>
+                
+                <div class="video-placeholder">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-info">
+                    <div class="lpa-badge">34.4 LPA</div>
+                    <div class="student-info">
+                        <h3>DIVYA LIKHITA</h3>
+                        <p class="position">SOFTWARE ENGINEER</p>
+                        <div class="branch-info">
+                            <p>BRANCH</p>
+                            <p><strong>CSE</strong></p>
+                        </div>
+                    </div>
+                    <div class="company-logo">PayPal</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <div class="blog-header">
+                <h2 class="section-title">Get daily updates and ideas from our team of experts.</h2>
+                <p>Creating professional websites has never been easier, today with Essentials you can build awesome websites in no time!</p>
+                <button class="check-blog-btn">Check our blog</button>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="tag">Finding a Job</span>
+                            <span class="tag">Get Inspired</span>
+                            <span class="tag">Industry News</span>
+                        </div>
+                        <h3>From Classroom to Cubicle: A Day in the Life of a Junior Java Developer</h3>
+                        <div class="blog-date">
+                            <i class="fas fa-calendar"></i>
+                            December 7, 2024
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="tag">Career Advice</span>
+                            <span class="tag">Industry News</span>
+                            <span class="tag">Learning Tips</span>
+                        </div>
+                        <h3>The Top 10 Spring Boot Features Every Java Developer Should Master</h3>
+                        <div class="blog-date">
+                            <i class="fas fa-calendar"></i>
+                            December 6, 2024
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-tags">
+                            <span class="tag">Career Advice</span>
+                            <span class="tag">Industry News</span>
+                        </div>
+                        <h3>7 Essential Skills Every Full Stack Developer Needs in 2025</h3>
+                        <div class="blog-date">
+                            <i class="fas fa-calendar"></i>
+                            December 3, 2024
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support">
+        <div class="container">
+            <h2 class="section-title">KodNest Learner Support</h2>
+            <p>Reach out to our experts anytime. We're here to assist you 24/7.</p>
+            <button class="talk-expert-btn">
+                <i class="fas fa-phone"></i>
+                Talk to a Career Expert
+            </button>
+        </div>
+    </section>
+
+    <!-- Brand Section -->
+    <section class="brand">
+        <div class="container">
+            <h2 class="section-title">KodNest - Code, Transform and Succeed</h2>
+            <p>Empowering Tomorrow's Leaders with Cutting-Edge Education and Robust Placement Support</p>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-k">K</span><span class="logo-text">odNest</span>
+                    </div>
+                    <p>All rights reserved</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Full Stack Development</a></li>
+                        <li><a href="#">Premium Testing Module</a></li>
+                        <li><a href="#">Hire from us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Copyright Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+                        <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        Contact us - +91-8095 000 123
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        Email - info@kodnest.com
+                    </div>
+                </div>
+                <button class="demo-register-btn">Register for Demo</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
